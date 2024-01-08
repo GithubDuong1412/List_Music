@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-List Play</title>
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./Asset/css/style_music-list.css">
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+    <div class="player">
+        <div class="dashbroad">
+
+            <!-- Header -->
+            <header>
+                <h4>My List Music : Playing</h4>
+                <p>My Album</p>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd_thumb" style="background-image: url('./Asset/img/Kid_IMG.jpg');"></div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn_repeat">
+                    <i class="fa-sharp fa-solid fa-repeat"></i>
+                </div>
+                <div class="btn btn_prev">
+                    <i class="fa-sharp fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn_toggle-play">
+                    <i class="icon-pause fa-sharp fa-solid fa-pause"></i>
+                    <i class="icon-play fa-sharp fa-solid fa-play"></i>
+                </div>
+                <div class="btn btn_next">
+                    <i class="fa-sharp fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn btn_random">
+                    <i class="fa-sharp fa-solid fa-random"></i>
+                </div>
+            </div>
+
+            <input type="range" id="progress" class="progress" value="0" step="0" min="0" max="100">
+
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            
+        </div>
+
+    </div>
+</body>
+
+<script src="./main_music-lis.js"></script>
+
+</html>
